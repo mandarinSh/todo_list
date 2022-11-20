@@ -1,0 +1,30 @@
+@import '/src/view/styles/common.scss';
+
+.newTaskInput {
+    display: flex;
+
+    &Value {
+        border: 1px solid #B1B1B1;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        padding: 5px 10px;
+        font: 1rem/1.4 'Roboto', sans-serif;
+        background: $main-light-blue;
+
+        &::placeholder {
+            color: #7B7B7B;
+        }
+    }
+
+    &Button, .MuiButtonBase-root {
+        min-width: 42px;
+        border-radius: none;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border: none;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
